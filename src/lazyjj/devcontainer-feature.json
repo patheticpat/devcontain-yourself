@@ -1,0 +1,11 @@
+{
+    "id": "lazyjj",
+    "version": "0.1.0",
+    "name": "lazyjj",
+    "description": "TUI for jujutsu",
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/rust:1": {
+            "version": "latest"
+        }
+    }
+}
