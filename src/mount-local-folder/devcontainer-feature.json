@@ -17,8 +17,8 @@
     },
     "mounts": [
         {
-            "source": "${hostPath}",
-            "target": "${containerPath}",
+            "source": "${HOSTPATH}",
+            "target": "${CONTAINERPATH}",
             "type": "bind"
         }
     ]
