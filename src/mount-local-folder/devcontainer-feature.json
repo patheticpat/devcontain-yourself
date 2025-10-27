@@ -1,0 +1,25 @@
+{
+    "id": "mount-local-folder",
+    "version": "0.1.0",
+    "name": "Mount Local Folder",
+    "description": "Mounts a local folder from the host into the devcontainer",
+    "options": {
+        "hostPath": {
+            "type": "string",
+            "default": "${localEnv:HOME}/.config/jj",
+            "description": "The path on the host machine to mount"
+        },
+        "containerPath": {
+            "type": "string",
+            "default": "${containerEnv:HOME}/.config/jj",
+            "description": "The path inside the container where the folder will be mounted"
+        }
+    },
+    "mounts": [
+        {
+            "source": "${hostPath}",
+            "target": "${containerPath}",
+            "type": "bind"
+        }
+    ]
+}
